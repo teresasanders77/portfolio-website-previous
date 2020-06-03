@@ -87,10 +87,6 @@ button:focus,
 * {
 	box-sizing: border-box;
 }
-table {
-    margin-left: auto;
-    margin-right: auto;
-}
 .page-header {
 	display: flex;
 	width: 100%;
