@@ -87,10 +87,6 @@ button:focus,
 * {
 	box-sizing: border-box;
 }
-table {
-    margin-left: auto;
-    margin-right: auto;
-}
 .page-header {
 	display: flex;
 	width: 100%;
@@ -126,6 +122,11 @@ table {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 20px;
+}
+.form {
+	margin-left: 25%;
+	margin-right: 25%;
+	width: 50%;
 }
 @media all and (max-width: 750px) {
 	.grid {
