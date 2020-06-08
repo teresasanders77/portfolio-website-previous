@@ -72,8 +72,8 @@ button:hover,
 button:focus,
 .button:hover,
 .button:focus {
+  cursor: pointer!important;
   cursor: hand;
-  cursor: pointer;
   opacity: 0.8;
 }
 
