@@ -184,6 +184,12 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
+.berlin-illustration {
+	width: 100%;
+	max-width: 400px
+	height: auto;
+}
+
 @media only screen and (max-device-width: 736px) {
 	.main-navigation page-header__item {
 		width: 200px !important;

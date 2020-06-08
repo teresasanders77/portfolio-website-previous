@@ -236,7 +236,8 @@ input[type=submit]:hover {
 }
 
 .berlin-illustration {
-	width: 100%
+	width: 100%;
+	max-width: 400px
 	height: auto;
 }
 
