@@ -235,6 +235,11 @@ input[type=submit]:hover {
   }
 }
 
+.berlin-illustration {
+	width: 100%
+	height: auto;
+}
+
 @media only screen and (max-device-width: 736px) {
 	.main-navigation page-header__item {
 		width: 200px !important;
