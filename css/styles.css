@@ -142,6 +142,11 @@ button:focus,
   background-color: #dcdcdc;
 }
 
+span.cell {
+  background-color: #dcdcdc;
+  display: block;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

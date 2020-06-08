@@ -163,6 +163,11 @@ button:focus,
   background-color: #dcdcdc;
 }
 
+span.cell {
+  background-color: #dcdcdc;
+  display: block;
+}
+
 .grid {
   display: -ms-grid;
   display: grid;
