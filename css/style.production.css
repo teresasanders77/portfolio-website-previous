@@ -168,6 +168,7 @@ button:focus,
   display: grid;
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 300px 300px;
   grid-gap: 20px;
 }
 
