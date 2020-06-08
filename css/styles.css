@@ -183,6 +183,14 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
+
+@media only screen and (max-device-width: 736px) {
+	.main-navigation {
+		width: 200px !important;
+		margin:0 auto !important;
+	}
+}
+
 @media all and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr;

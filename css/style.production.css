@@ -235,6 +235,13 @@ input[type=submit]:hover {
   }
 }
 
+@media only screen and (max-device-width: 736px) {
+	.main-navigation {
+		width: 200px !important;
+		margin:0 auto !important;
+	}
+}
+
 @-webkit-keyframes color-change {
   0% {
     fill: #edc655;
