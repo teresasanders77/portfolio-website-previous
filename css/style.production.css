@@ -247,7 +247,7 @@ input[type=submit]:hover {
 		right: 0;
 		top: 0;
 	}
-	.main-navigation page-header__item.responsive a {
+	.navigation-list.responsive a {
 		float: none;
 		display: block;
 		text-align: left;
