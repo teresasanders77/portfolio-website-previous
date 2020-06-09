@@ -207,8 +207,9 @@ input[type=submit]:hover {
 
 @media screen and (max-width: 760px) {
 	.navigation-list {
-		position: static;
-		display: non;
+		ul > lil {
+			width: 100%;
+		}
 }
 
 @media all and (max-width: 750px) {
