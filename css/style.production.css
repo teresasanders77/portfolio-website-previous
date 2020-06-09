@@ -207,8 +207,10 @@ input[type=submit]:hover {
 
 @media all and (max-width: 750px) {
 	.navigation-list {
-		display: flex;
-		flex-shrink: 1;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		width: 200px;
 	}
 }
 
