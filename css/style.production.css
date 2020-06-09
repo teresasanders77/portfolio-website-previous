@@ -169,7 +169,6 @@ button:focus,
   display: grid;
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 300px 300px;
   grid-gap: 20px;
 }
 
@@ -242,8 +241,8 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width: 600px) {
-	.main-navigation page-header__item.responsive {position: relative;}
-	.main-navigation page-header__item.responsive a.navigation-list__item {
+	.navigation-list.responsive {position: relative;}
+	.navigation-list.responsive a.navigation-list__item {
 		position: absolute;
 		right: 0;
 		top: 0;
