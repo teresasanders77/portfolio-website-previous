@@ -64,7 +64,7 @@ button:hover,
 button:focus,
 .button:hover,
 .button:focus {
-  cursor: pointer!important;
+  cursor: pointer !important;
   cursor: hand;
   opacity: 0.8;
 }
@@ -99,7 +99,7 @@ button:focus,
 }
 
 .title {
-	text-align: center;
+  text-align: center;
 }
 
 .page-header {
@@ -149,19 +149,21 @@ button:focus,
   grid-gap: 20px;
 }
 
-input[type=text], select, textarea {
-  width: 100%; 
-  padding: 12px; 
-  border: 1px solid #ccc; 
-  border-radius: 4px; 
-  box-sizing: border-box; 
-  margin-top: 6px; 
-  margin-bottom: 16px; 
-  resize: vertical 
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -180,16 +182,16 @@ input[type=submit]:hover {
 }
 
 .berlin-illustration {
-	width: 100%;
-	max-width: 400px
-	height: auto;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
 }
 
 @media only screen and (max-device-width: 736px) {
-	.main-navigation page-header__item {
-		width: 200px !important;
-		margin:0 auto !important;
-	}
+  .main-navigation {
+    width: 200px !important;
+    margin: 0 auto !important;
+  }
 }
 
 @media all and (max-width: 750px) {
@@ -232,6 +234,7 @@ input[type=submit]:hover {
     fill: #f76414;
   }
 }
+
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
@@ -263,4 +266,3 @@ input[type=submit]:hover {
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
-/n
