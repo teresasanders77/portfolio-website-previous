@@ -72,7 +72,7 @@ button:hover,
 button:focus,
 .button:hover,
 .button:focus {
-  cursor: pointer!important;
+  cursor: pointer !important;
   opacity: 0.8;
 }
 
@@ -204,23 +204,16 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
-@media screen and (max-width: 760px) {
-	.navigation-list {
-		ul > lil {
-			width: 100%;
-		}
-}
-
 @media screen and (min-width: 601px) {
-	.profile {
-		font-size: 80px;
-	}
+  .profile {
+    font-size: 80px;
+  }
 }
 
 @media screen and (max-width: 600px) {
-	.profile {
-		font-size: 13px;
-	}
+  .profile {
+    font-size: 13px;
+  }
 }
 
 @media all and (max-width: 750px) {
@@ -253,9 +246,9 @@ input[type=submit]:hover {
 }
 
 .berlin-illustration {
-	width: 100%;
-	max-width: 400px
-	height: auto;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
 }
 
 @-webkit-keyframes color-change {
@@ -348,4 +341,3 @@ input[type=submit]:hover {
   -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
-/n
