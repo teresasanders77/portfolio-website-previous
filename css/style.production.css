@@ -206,7 +206,7 @@ input[type=submit]:hover {
 
 @media screen and (min-width: 601px) {
   .profile {
-    font-size: 80px;
+    font-size: 16px;
   }
 }
 
