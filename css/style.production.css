@@ -42,6 +42,10 @@ a:active {
   color: #489c79;
 }
 
+label {
+  color: black;
+}
+
 button {
   border: none;
   display: inline-block;
