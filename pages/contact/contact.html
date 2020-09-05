@@ -1,3 +1,23 @@
+<?php 
+if(isset($_POST['submit'])){
+    $to = "Teresa.Loafman@gmail.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -36,33 +56,35 @@
       </ul>
     </nav>
   </header>
-  <div class="profile">
-    <h1>Contact</h1>
-    Teresa Loafman<br>
-    Colorado Springs, CO 80910<br>
-    <br>
-    Tel: <a href="tel:+3073991474" aria-label="Teresa Loafman's phone number">(307) 399-1474</a><br>
-    Skype: <a href="skype:teresasanders77_1">teresasanders77_1</a><br>
-    Email: <a href="mailto:teresasanders77@gmail.com">teresasanders77@gmail.com</a><br>
+  <div class="left">
+    <div class="profile">
+      <h1>Contact</h1>
+      <h3>Teresa Loafman<br>
+        Colorado Springs, CO 80910</h3><br>
+      Tel: <a href="tel:+3073991474" aria-label="Teresa Loafman's phone number">(307) 399-1474</a><br>
+      Skype: <a href="skype:teresasanders77_1">teresasanders77_1</a><br>
+      Email: <a href="mailto:Teresa.Loafman@gmail.com">Teresa.Loafman@gmail.com</a><br>
+    </div>
   </div>
-  <div class="container">
-    <form action="action_page.php">
+  <div class="right">
+    <div class="container">
+      <form action="" method="post">
 
-      <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="first_name" placeholder="Your name..">
 
-      <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="last_name" placeholder="Your last name..">
 
-      <label for="email">Email</label>
-      <input type="text" id="email" name="email" placeholder="Your email address..">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your email address..">
 
-      <label for="subject">Subject</label>
-      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
 
-      <input type="submit" value="Submit">
-
-    </form>
+        <input type="submit" name="submit" value="Submit">
+      </form>
+    </div>
   </div>
   <script src="../../js/tota11y.min.js"></script>
 
