@@ -225,7 +225,13 @@ button:focus,
   text-align: right;
 }
 
-/*Form styling*/
+.contactForm {
+  float: right;
+  margin-top: -260px;
+  margin-right: 200px;
+
+}
+/*Form styling
 input[type=text],
 select,
 textarea {
@@ -251,7 +257,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #45a049;
-}
+}*/
 
 .container {
   border-radius: 5px;
