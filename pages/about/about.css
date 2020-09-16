@@ -253,6 +253,7 @@ body {
   float: right !important;
   margin-top: -302px;
   padding-right: 25px;
+  max-width: 100%;
 }
 
 /*Responsive*/
