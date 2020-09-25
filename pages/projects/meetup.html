@@ -3,14 +3,13 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TERESA LOAFMAN - Projects</title>
+  <meta name="viewport" content="width=devide-width, initial-scale=1">
+  <title>TERESA LOAFMAN - Meetup</title>
   <link rel="icon" type="image/png" href="../../img/myIcon.ico" sizes="16x16" />
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="projects.css">
 </head>
 
@@ -21,7 +20,7 @@
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="navicon">
       </span></label>
-    <div class="menu">
+    <ul class="menu">
       <li role="presentation">
         <a href="../index/index.html" role="menuitem" class="navigation-list__item navigation-list__item">Home</a>
       </li>
@@ -40,58 +39,55 @@
       <li role="presentation">
         <a href="../contact/contact.html" role="menuitem" class="navigation-list__item">Contact</a>
       </li>
-    </div>
+    </ul>
   </header>
-  <h1>Projects</h1>
-  <main class="grid">
-    <article>
-      <a href="pokedex.html" role="menuitem" class="project_link"><img src="../../img/pokedex.png"
-          alt="pokedex website photo">
-        <div class="text">
-          <h3>Pokédex</h3>
-          <p>A small web application with HTML, CSS, and JavaScript that loads data from an external API and enables the
-            viewing of data points in detail.</p>
-      </a>
-      </div>
-    </article>
-    <article>
-      <a href="myFlix.html" role="menuitem" class="project_link"><img src="../../img/myFlix.png"
-          alt="myFlix website photo">
-        <div class="text">
-          <h3>My Flix</h3>
-          <p>A movies application consisting of a REST API, built using JavaScript, Node.js, Express, and MongoDB for
-            the
-            server-side and JSX, React, Redux, Parcel and Heroku for the front-end.</p>
-      </a>
-      </div>
-    </article>
-    <article>
-      <a href="meetup.html" role="menuitem" class="project_link"><img src="../../img/meetup.png"
-          alt="Meetup website photo">
-        <div class="text">
-          <h3>Meetup</h3>
-          <p>A serverless, progressive web application built using React and a TDD technique.</p>
-      </a>
-      </div>
-    </article>
-    <article>
-      <a href="quiz.html" role="menuitem" class="project_link"><img src="../../img/my-awesome-quiz-app.png"
-          alt="Quiz website photo">
-        <div class="text">
-          <h3>Quiz App</h3>
-          <p>A quiz app built using Angular, and Angular Material.</p>
-      </a>
-      </div>
-    </article>
-    <article>
-      <a href="toDo.html" role="menuitem" class="project_link"><img src="../../img/todo.png" alt="To-do website photo">
-        <div class="text">
-          <h3>To-do List</h3>
-          <p>A to-do app built using Angular, and Angular Material.</p>
-      </a>
-      </div>
-    </article>
-  </main>
+  <h1>Meetup</h1>
+  <div class="button-link">
+    <a href="https://github.com/teresasanders77/meetup" target="_blank" class="button">Check
+      out my code</a>
+    <a href="https://teresasanders77.github.io/meetup/" target="_blank" class="button">Demo</a>
+  </div>
+  <div class="right">
+    <a href="https://teresasanders77.github.io/meetup/" target="_blank" role="menuitem"><img src="../../img/meetup2.png"
+        class="profile__portrait" alt="Meetup screenshot"></a>
+    <a href="https://teresasanders77.github.io/meetup/" target="_blank" role="menuitem"><img src="../../img/meetup3.png"
+        class="profile__portrait" alt="Meetup"></a>
+  </div>
+  <div class="left">
+    <h3>Objective:</h3>
+    <p>To build a serverless, progressive web application (PWA) with React using a test-driven
+      development (TDD) technique. The application uses the Meetup API to fetch upcoming events
+      for a selected city.
+    </p>
+    <h3>Key Features:</h3>
+    <li>Filter events by city.
+    </li>
+    <li>Show/hide event details.
+    </li>
+    <li>Specify number of events.
+    </li>
+    <li>Use the app when offline</li>
+    <li>Add app shortcut to the home screen.
+    </li>
+    <li>View a chart showing the number of upcoming events by date.
+    </li>
+
+    <h3>Tools:</h3>
+    <div class="ul">
+      <li>JavaScript</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>React</li>
+      <li>TDD</li>
+      <li>OAuth2 Authentification</li>
+      <li>AWS Lambda</li>
+      <li>Responsive</li>
+      <li>GitHub</li>
+      <li>Passes Lighthouse's PWA checklist</li>
+      <li>Axios</li>
+      <li>OOP</li>
+      <li>Recharts</li>
+    </div>
   </div>
   <footer class="page-footer">
     <p>Find me on</p>
