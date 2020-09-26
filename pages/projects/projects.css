@@ -189,7 +189,7 @@ button:focus,
 .profile2 {
   font-family: 'Montserrat', sans-serif !important;
   padding: 75px;
-  font-size: 180px !important;
+  font-size: 9vw !important;
   color: #204051;
   text-align: center;
     -webkit-animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -331,7 +331,6 @@ button:focus,
   top: 0;
 }
 
-
 /*Grid Styling*/
 .grid { 
   margin-top: -50px;
@@ -409,30 +408,34 @@ button:focus,
 }
 
 @media all and (max-width: 750px) {
-  .grid {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+  @media all and (max-width: 750px) {
+    .grid {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+    }
   }
-}
-
-@media all and (min-width: 500px) and (max-width: 750px) {
-  .grid {
-    -ms-grid-columns: 1fr 20px 1fr;
-    grid-template-columns: 1fr 1fr;
+  
+  @media all and (min-width: 500px) and (max-width: 750px) {
+    .grid {
+      -ms-grid-columns: 1fr 20px 1fr;
+      grid-template-columns: 1fr;
+    }
   }
-}
-
-@media all and (max-width: 750px) {
-  .grid {
-    grid-gap: 10px;
-  }
-
-  .grid__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
-
-  h1 {
-    font-size: 22px;
+  
+  @media all and (max-width: 750px) {
+    .grid {
+      margin-top: 100px; 
+      grid-gap: 10px;
+    }
+  
+    .grid__item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
+  
+    h1 {
+      font-size: 22px;
+      font-size: 9vw !important;
+    }
   }
 }

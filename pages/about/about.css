@@ -1,6 +1,6 @@
 html, body {
   margin:0;
-  padding:0;
+  padding:10px;
   height: 100%; width: 100%;
   background: linear-gradient(white, #204051);
 }
@@ -29,25 +29,6 @@ body {
   text-decoration: none;
   transition: background-size .5s;
 }
-
-.navigation-list__item:hover {
-  background-size: 4px 50px;
-}
-
-.navigation-list {
-  list-style-type: none;
-}
-
-.navigation-list li {
-  display: inline-block;
-  margin-left: 15px;
-  font-size: 20px;
-}
-
-.navigation-list__item--active {
-  text-decoration: none;
-}
-
 
 /*Font styling*/
 h1 {
@@ -148,24 +129,6 @@ button:focus,
   flex-direction: column;
   text-align: center !important;
 }
-html, body {
-  margin:0;
-  padding:0;
-  height: 100%; width: 100%;
-  background: linear-gradient(white, #204051);
-}
-
-body {
-  font-family: 'Playfair Display', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  color: white;
-}
-
-:root {
-  --mainColor: #cae8d5;
-}
-
 
 /*Name styling*/
 
@@ -409,15 +372,6 @@ body {
 }
 
 @media all and (max-width: 750px) {
-  .grid {
-    grid-gap: 10px;
-  }
-
-  .grid__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
-
   h1 {
     font-size: 22px;
   }
