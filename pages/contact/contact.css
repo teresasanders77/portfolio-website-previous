@@ -54,9 +54,9 @@ h1 {
     font-family: 'Montserrat', sans-serif !important;
     display: flex;
     position: relative;
-    padding-left: 200px;
+    padding-left: 150px;
     margin-top: 50px;
-    font-size: 180px !important;
+    font-size: 9vw !important;
     color: #204051;
     text-align: center;
       -webkit-animation: slide-in-fwd-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -168,7 +168,7 @@ button:focus,
   padding: 75px;
   font-size: 180px !important;
   color: #204051;
-  text-align: center;
+
     -webkit-animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
@@ -329,13 +329,13 @@ button:focus,
 
 /* Style the collapsible content. Note: hidden by default */
 .content {
-  padding: 25px 18px;
+  padding: 1%;
   overflow: hidden;
   background-color: #f1f1f1;
   width: 33%;
   float: right;
-  margin-top: -250px;
-  margin-right: 75px;
+  margin-top: -13%;
+  margin-right: 10%;
 }
 
 .contact-form {
@@ -392,7 +392,7 @@ form .submit:hover {
 }
 
 .left {
-  margin-left: 500px;
+  margin-left: 300px;
 }
 
 
@@ -454,4 +454,18 @@ form .submit:hover {
   h1 {
     font-size: 22px;
   }
+
+  h3 {
+    font-size: 15px; 
+    line-height: 15px; 
+  }
+
+  .left {
+    margin:auto; 
+  }
+
+  .form-control {
+    width: 100%;
+    margin: 0!important;
+  } 
 }
