@@ -50,10 +50,15 @@
       Email: <a href="mailto:Teresa.Loafman@gmail.com">Teresa.Loafman@gmail.com</a><br>
     </div>
   </div>
-  <div class="contactForm">
-    <iframe
-      src="https://docs.google.com/forms/d/e/1FAIpQLScymNwjMA3-4jCK46ej2cHNcQNe05XsgX4l_WzEMOxHdduMFg/viewform?embedded=true"
-      width="640" height="808" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  <div class="content">
+    <form id="contact-form" method="post" action="https://formspree.io/xleodrnk">
+      <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+      <br>
+      <input name="email" type="email" class="form-control" placeholder="Your Email" required>
+      <br>
+      <textarea name="other" rows="5" class="form-control" placeholder="Message" row="4"></textarea><br>
+      <input type="submit" class="form-control submit" value="SUBMIT">
+    </form>
   </div>
   </div>
   <footer class="page-footer">

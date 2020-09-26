@@ -231,33 +231,74 @@ button:focus,
   margin-right: 200px;
 
 }
-/*Form styling
-input[type=text],
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+
+/*Form styling*/
+.collapsible {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 33%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  margin-top: 100px;
 }
 
-input[type=submit] {
-  background-color: #cae8d5;
-  color: #204051;
-  padding: 12px 20px;
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  width: 33%;
+  float: right;
+  margin-top: -250px;
+  margin-right: 75px;
+}
+
+.contact-form {
+  display: inline-block;
+}
+
+form {
+  transition: all 4s ease-in-out;
+}
+
+.form-control {
+  width: 600px;
   border: none;
-  border-radius: 4px;
+  outline: none;
+  border-bottom: 1px solid gray;
+  color: #2b2b2b;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+input {
+  height: 45px;
+}
+
+form .submit {
+  background: #cae8d5;
+  border-color: transparent;
+  color: #2b2b2b;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px; 
+}
+
+form .submit:hover {
+  background-color: #6aaa81;
   cursor: pointer;
 }
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}*/
 
 .container {
   border-radius: 5px;
