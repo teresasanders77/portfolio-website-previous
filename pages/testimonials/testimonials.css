@@ -120,7 +120,7 @@ button:focus,
   color: black;
   cursor: pointer;
   padding: 18px;
-  width: 50%;
+  width: 33%;
   border: none;
   text-align: left;
   outline: none;
@@ -139,7 +139,7 @@ button:focus,
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
-  width: 50%;
+  width: 33%;
 }
 
 .contact-form {
