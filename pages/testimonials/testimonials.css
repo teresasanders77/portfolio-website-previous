@@ -1,8 +1,9 @@
 html, body {
   margin:0;
-  padding:0;
-  height: 100%; width: 100%;
+  padding:10px;
+  height: auto; width: 100%;
   background: linear-gradient(white, #204051);
+  background-attachment: fixed;
 }
 
 body {
@@ -125,7 +126,8 @@ button:focus,
   text-align: left;
   outline: none;
   font-size: 15px;
-  margin-top: 100px;
+  margin-top: 115px;
+
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -134,8 +136,7 @@ button:focus,
 }
 
 /* Style the collapsible content. Note: hidden by default */
-.content {
-  padding: 0 18px;
+.content {  
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
@@ -148,16 +149,18 @@ button:focus,
 
 form {
   transition: all 4s ease-in-out;
+  padding: 18px;
 }
 
 .form-control {
-  width: 600px;
+  width: 100%;
   border: none;
   outline: none;
   border-bottom: 1px solid gray;
   color: #2b2b2b;
   font-size: 15px;
   margin-bottom: 16px;
+  padding: 18px;
 }
 
 input {
@@ -181,73 +184,122 @@ form .submit:hover {
 }
 
 /*Testimonial styling*/
-body {
-  font-family: "Open Sans", sans-serif;
-}
-
-.testimonials {
-  overflow: hidden;
+.carrousel {
+  background: #ffffff;
+  text-align: center;
+  padding: 4em 0;
+  height: 20em;
+  max-width: 1000px;
   position: relative;
-  max-height: 300px;
+  overflow: hidden;
+  margin-top: 9em;
+  margin-left: 450px; 
+}
+.carrousel h2 {
+  margin: 0;
+  margin-top: -1.7em;
+  padding: 0;
+  font-size: 1em;
+  text-align: center;
+  color: #bbbbbb;
+}
+.carrousel .slides {
+  width: 400%;
+  left: 0;
+  padding-left: 0;
+  padding-top: 1em;
+  overflow: hidden;
+  list-style: none;
+  position: relative;
+  -webkit-transition: transform .5s;
+  -moz-transition: transform .5s;
+  -o-transition: transform .5s;
+  transition: transform .5s;
+}
+.carrousel .slides li {
+  width: 25%;
+  position: relative;
+  float: left;
+}
+.carrousel li p{
+  margin-top: 0;  
+}
+.carrousel li q {
+  max-width: 90%;
+  margin: auto;
+  color: #666666;
+  font-size: 1.3em;
 }
 
-.testimonials {
-  background:transparent;
-}
-
-.one-slide,
-.testimonial,
-.message {
-  border: none !important;
-  outline: none !important;
-}
-
-.carousel-controls .control {
-  position: absolute;
-  transform: translateY(-50%);
-  width: 45px;
-  height: 45px;
+.carrousel li img {
+  width: 3em;
+  height: 3em;
+  object-fit: cover;
   border-radius: 50%;
-  border: 2px solid #fff;
-  z-index: 1;
+  margin-left: -1.5em;
+  margin-right: 0.5em;
+  vertical-align: middle;
 }
 
-.prev {
-  left: -2.25rem;
+.carrousel li span.author {
+  margin-top:0.5em;
+  font-size: 1.2em;
+  color: #777777;
+  display: block;
 }
 
-.next {
-  right: -2.25rem;
+.carrousel .slidesNavigation {
+  display: block;
+  list-style: none;
+  text-align: center;
+  bottom: 1em;
+  /*--- Centering trick---*/
+    /* Absolute positioning*/
+    position: absolute; 
+    /* Abosulte positioning*/
+    width: 104px; /*This width  is the addition of the width of all the navigations dots - So in this case is   104 because the navigation dots are 26px (width:10px and 6px marginleft + 6 px marginright) and there are 4 dots so 4x26=104 */
+    left: 50%; /*Centering de element*/
+    margin-left: -52px; /*adjusting the centering by applying a negative margin of half of the width*/
 }
-
-@media screen and (max-width: 768px) {
-  .testimonials {
-    max-height: 700px;
-  }
-  .icon-overlay {
-    height: 300px;
-    top: calc(50% - 150px);
-  }
-  .carousel-controls .control {
-    width: 25px;
-    height: 25px;
-    top: inherit;
-  }
-  .prev {
-    left: 0;
-  }
-  .next {
-    right: 0;
-  }
-  .control i {
-    font-size: .7rem;
-  }
-  .testimonials .message {
-    font-size: 1rem;
-  }
-  .testimonials h2 {
-    font-size: 1.5rem;
-  }
+.carrousel input {
+  display: none;
+}
+.carrousel .slidesNavigation label {
+  float: left;
+  margin: 6px;
+  display: block;
+  height: 10px;
+  width: 10px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: solid 2px #2980b9;
+  font-size: 0;
+}
+/* You have to repeat this with each slide
+TODO: make it easier with SCSS
+25% movement 100/slides-num
+*/
+#radio-1:checked ~ .slides {
+  transform: translateX(0%);
+}
+#radio-2:checked ~ .slides {
+  transform: translateX(-25%);
+}
+#radio-3:checked ~ .slides {
+  transform: translateX(-50%);
+}
+#radio-4:checked ~ .slides {
+  transform: translateX(-75%);
+}
+.carrousel .slidesNavigation label:hover {
+   cursor: pointer;
+}
+/* You have to repeat this with each slide/dot */
+.carrousel #radio-1:checked ~ .slidesNavigation label#dotForRadio-1,
+.carrousel #radio-2:checked ~ .slidesNavigation label#dotForRadio-2,
+.carrousel #radio-3:checked ~ .slidesNavigation label#dotForRadio-3,
+.carrousel #radio-4:checked ~ .slidesNavigation label#dotForRadio-4 {
+  background: #2980b9;
 }
 
 /*Footer styling*/
@@ -275,6 +327,7 @@ body {
 .profile {
   font-family: 'Montserrat', sans-serif !important;
   margin-top: 10px;
+  margin-right: 200px;
   padding: 75px;
   float: left;
   font-size: 5vw !important;
@@ -495,7 +548,33 @@ body {
 }
 
 /*Responsive*/
-/* 48em = 768px */
+
+@media  (max-width: 796px) {
+  .carrousel{
+    height: auto;
+    margin: auto;
+  }
+  button {
+    height: auto;
+    margin-bottom: 100px; 
+    margin-left: 125px; 
+}
+
+}
+@media  (max-width: 480px) {
+  .carrousel li p {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+  .carrousel li q {
+      font-size: 1em;
+  }
+  .carrousel li img {
+     width:2em;
+     margin-left: -1em;
+     margin-right: 0.25em;
+  }
+}
 
 @media (min-width: 48em) {
   .header li {
