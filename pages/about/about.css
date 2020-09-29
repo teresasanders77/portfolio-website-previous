@@ -3,6 +3,7 @@ html, body {
   padding:10px;
   height: 100%; width: 100%;
   background: linear-gradient(white, #204051);
+  background-attachment: fixed;
 }
 
 body {
@@ -35,7 +36,7 @@ h1 {
     font-family: 'Montserrat', sans-serif !important;
     display: flex;
     position: relative;
-    padding-left: 200px;
+    padding-left: 275px;
     margin-top: -10px;
     font-size: 9vw !important;
     color: #204051;
@@ -199,10 +200,12 @@ button:focus,
 
 /*Image styling*/
 .profile-pic {
-  float: right !important;
-  margin-top: -302px;
-  padding-right: 25px;
-  max-width: 100%;
+  max-width:40% !important;
+    height:auto;
+    display:block;
+    float: right; 
+    padding: 25px; 
+    margin-top: -16%; 
 }
 
 /*Header styling*/
@@ -332,16 +335,10 @@ button:focus,
 
 @media screen and (min-width: 601px) {
   .profile  {
-    font-size: 16px;
+    font-size: 16px; 
   }
   .bio {
     font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .profile-pic {
-    margin-top: 25px; 
   }
 }
 
@@ -351,10 +348,9 @@ button:focus,
   }
   .bio {
     font-size: 20px;
+    padding-top: 100px; 
   }
-  .profile-pic {
-    margin-top: 25px; 
-  }
+
 }
 
 @media all and (max-width: 750px) {
@@ -374,9 +370,16 @@ button:focus,
 @media all and (max-width: 750px) {
   h1 {
     font-size: 22px;
+    padding-left: 50px;  
   }
 }
 
+@media all and (max-width: 900px) {
+  h1 {
+    font-size: 22px;
+    padding-left: 75px;  
+  }
+}
 
 
 

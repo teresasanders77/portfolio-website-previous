@@ -379,13 +379,13 @@ button:focus,
 
 @media screen and (min-width: 601px) {
   .profile {
-    font-size: 16px;
+    font-size: 6vw;
   }
 }
 
 @media screen and (max-width: 600px) {
   .profile {
-    font-size: 13px;
+    font-size: 6vw;
   }
 }
 
