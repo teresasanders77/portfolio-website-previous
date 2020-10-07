@@ -78,6 +78,8 @@ h3 {
 a {
   color: #204051;
   text-decoration: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 label {
