@@ -372,6 +372,7 @@ button:focus,
     padding-top: 130px; 
     display: block;
   }
+  .mobile-space {margin-bottom: 75px}
 
 }
 
@@ -380,6 +381,7 @@ button:focus,
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
+  .mobile-space {margin-bottom: 75px}
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
