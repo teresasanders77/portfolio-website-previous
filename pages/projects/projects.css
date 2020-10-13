@@ -370,6 +370,15 @@ button:focus,
   padding: 25px;
 }
 
+.profile__portrait2 {
+  margin-top: 5px;
+  height: auto;
+  width: 250px;
+  display: flex;
+  padding: 25px;
+  margin-left: 220px; 
+}
+
 .right {
   float: right;
   margin-left: 20px;
