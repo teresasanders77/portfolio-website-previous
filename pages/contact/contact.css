@@ -422,12 +422,38 @@ form .submit:hover {
   .profile {
     font-size: 13px;
   }
+  h1 {
+    margin-left: -30%; 
+  }
+  .content {
+    width: 80%;
+  }
+  .left {
+    margin:auto; 
+    padding: 50px; 
+  }
+  .page-footer {
+    position: relative;
+  }
 }
 
 @media all and (max-width: 750px) {
   .grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+  h1 {
+    margin-left: -30%; 
+  }
+  .content {
+    width: 80%;
+  }
+  .left {
+    margin:auto; 
+    padding: 50px; 
+  }
+  .page-footer {
+    position: relative;
   }
 }
 
@@ -436,13 +462,28 @@ form .submit:hover {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
   }
+  h1 {
+    margin-left: -30%; 
+  }
+  .content {
+    width: 80%;
+  }
+  .left {
+    margin:auto; 
+    padding: 50px; 
+  }
+  .page-footer {
+    position: relative;
+  }
 }
 
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
   }
-
+  h1 {
+    margin-left: -30%; 
+  }
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
@@ -459,10 +500,17 @@ form .submit:hover {
 
   .left {
     margin:auto; 
+    padding: 50px; 
   }
 
   .form-control {
     width: 100%;
     margin: 0!important;
   } 
+  .content {
+    width: 80%;
+  }
+  .page-footer {
+    position: relative;
+  }
 }
