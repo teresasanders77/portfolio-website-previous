@@ -421,12 +421,14 @@ form .submit:hover {
 @media screen and (max-width: 600px) {
   .profile {
     font-size: 13px;
+    padding: 50px; 
   }
   h1 {
     margin-left: -30%; 
   }
   .content {
     width: 80%;
+    padding: 20px; 
   }
   .left {
     margin:auto; 
@@ -438,6 +440,9 @@ form .submit:hover {
 }
 
 @media all and (max-width: 750px) {
+  .profile {
+    padding: 50px; 
+  }
   .grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -447,6 +452,7 @@ form .submit:hover {
   }
   .content {
     width: 80%;
+    padding: 20px; 
   }
   .left {
     margin:auto; 
@@ -458,6 +464,9 @@ form .submit:hover {
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
+  .profile {
+    padding: 50px; 
+  }
   .grid {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
@@ -467,6 +476,7 @@ form .submit:hover {
   }
   .content {
     width: 80%;
+    padding: 20px; 
   }
   .left {
     margin:auto; 
@@ -477,7 +487,10 @@ form .submit:hover {
   }
 }
 
-@media all and (max-width: 750px) {
+@media all and (max-width: 800px) {
+  .profile {
+    padding: 50px; 
+  }
   .grid {
     grid-gap: 10px;
   }
@@ -509,6 +522,7 @@ form .submit:hover {
   } 
   .content {
     width: 80%;
+    padding: 20px; 
   }
   .page-footer {
     position: relative;
