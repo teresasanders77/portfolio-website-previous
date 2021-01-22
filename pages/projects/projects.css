@@ -69,6 +69,10 @@ h1 {
               animation: slide-in-fwd-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
+.metzger {
+  font-size: 7vw !important; 
+}
+
 h2 {
   font-size: 24px;
   font-weight: 700;
